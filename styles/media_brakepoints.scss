@@ -1,0 +1,310 @@
+$xxl: 1200px;
+$xl: 1024px;
+$md: 767px;
+$sm: 576px;
+
+// Desktop
+
+@media all and (max-width: $xxl) {
+    
+    body{
+        .header{
+            padding:0 5%;
+            background-image: url(../images/designer_xl.png);
+            
+            .navigation{
+                width: 95%;
+            }
+        }
+
+        main{
+
+            .advantages{
+                padding:0 5%;
+                }
+
+            .advantages-list{
+                padding:0 5%;
+            }
+        }
+    }
+}
+
+// Laptop
+
+@media all and (max-width: $xl) {
+    
+    body{    
+        main{
+            .advantages{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                height: 550px;
+                
+                &__image{
+                    display: none;
+                }
+            }
+
+            .advantages-list{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding-left: 5%;
+                height: 670px;
+
+                &__image1{
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;    
+                    padding-bottom: 20px;
+                }
+            
+                &__image2{
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: 20px;
+                }
+            
+                &__image3{
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: 20px;
+                }
+            }
+
+            .price-wrapper{
+                height: 600px;
+                padding-top: 130px;
+                
+            }
+        }
+    }
+
+}
+
+// Tablet
+
+@media all and (max-width: $md) {
+    
+    body{
+
+        .header{
+            
+            background-image: url(../images/designer_md.png);
+            height: 650px;
+
+            .navigation{
+                flex-direction: column;
+
+                &__menu{
+                    order: 2;
+
+                    &__list{
+                        display: flex;
+                        gap: 60px;
+                        margin-bottom: 20px;
+                    }
+                }
+            
+                &__logo{
+                    order: 1;
+                    margin-bottom: 20px;
+                }
+        
+                &__button{
+                    order: 3;
+                }
+            }
+
+            .promo{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                margin-top: 50px;
+
+                &__heading{
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+            }
+            
+        }
+    }
+
+}
+
+// Mobile
+
+@media all and (max-width: $sm) {
+    
+    body{    
+        .header{
+            height: max-content;
+            .promo{  
+                padding-bottom: 20px;
+                &__buttons{
+                    &__purchase{
+                        width: 139px;
+                    }
+
+                    &__learn-more{
+                        width: 139px;
+                    }
+                }
+            }
+        }
+
+        main{
+            .advantages{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                height: max-content;
+                margin-top: 40px;
+
+                &__info{
+                    margin-bottom: 20px;
+
+                    h2{
+                        font-weight: 500;
+                        font-size: 26px;
+                        line-height: 20px;  
+                    }
+
+                    p{
+                        width: 90%;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                    .advantages__items{
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 15px;
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                        
+                        &__first{
+                            margin-bottom: 10px;
+                            
+                            p{
+                                width: 70%;
+                            }
+                        }
+
+                        &__second{
+                            p{
+                                max-width: 70%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .advantages-list{
+                height: max-content;
+                column-gap: 60px;
+
+                &__image1{
+                    display: none;
+                }
+            
+                &__image2{
+                    display: none;
+                }
+            
+                &__image3{
+                    display: none;
+                }
+
+                &__info{
+                    margin-bottom: 30px;
+                    width: 90%;
+                    height: max-content;
+
+                    h2{
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 20px;       
+                    }
+
+                    p{
+                        width: 90%;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+
+                }
+            }
+
+            .price-wrapper{
+                height: 550px;
+                padding-top: 130px;
+                
+                .price{
+                    h2{
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 20px;    
+                    }
+
+                    p{
+                        width: 90%;
+                        margin: 0 auto; 
+                    }
+
+                    .price__section{
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        .footer{
+            height: 250px;
+            justify-content: start;
+            
+            &__main{
+
+                &__top{
+                    flex-direction: column;
+                    align-items: center;
+                    height: 150px;
+                    padding-top: 10px;
+                    justify-content: center;
+
+                    &__text{
+                        order: 3;
+                    }
+
+                    &__button{
+                        margin: 10px 0; 
+                        order: 2; 
+                    }
+                }
+
+                &__bottom{
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+
+                    &____social-networks{
+                        
+                        gap: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
